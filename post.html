@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment_Invoice_p_Step</title>
+    <link href="All.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+
+        <!-- header start -->
+        <div class="flex_row flex_jcc flex_aic mb_30 mt_0_sm">
+            <div class="width_frame_940_W flex_row flex_jcsb flex_aic display_none_sm">
+                <div class="logotype_frame_W">
+                    <a href="index.html"><img class="logotype_max_W" src="pic/logo-all-dark.svg" alt=""></a>
+                </div>
+                <div class="flex_row flex_jcsb flex_aic">
+                    <div class="flex_row flex_jcsb flex_aic gap_x60_y0 mr_80">
+                        <a class="text_nonedeco" href="index.html">
+                            <div class="fs_16 fw700_lh150 main_color">首頁</div>
+                        </a>
+                        <a class="text_nonedeco" href="product.html">
+                            <div class="fs_16 fw700_lh150 main_color">甜點</div>
+                        </a>
+                        <a class="text_nonedeco" href="login.html">
+                            <div class="fs_16 fw700_lh150 main_color">登入</div>
+                        </a>
+                    </div>
+                    <a href="cart.html"><img src="pic/shopping_cart.png" alt=""></a>
+                </div>
+            </div>
+            <div class="width_frame_570_W display_blockon_sm display_none py_30_9md">
+                <div class="flex_row flex_jcsb flex_aic ">
+                    <a href=""><img src="pic/dehaze-24px.png" alt=""></a>
+                    <div class="logotype_frame_W">
+                        <a href="index.html"><img class="logotype_max_W" src="pic/logotype-sm-dark.svg" alt=""></a>
+                    </div>
+                    <a href="cart.html"><img src="pic/shopping_cart.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!-- header end -->
+
+        <div class="flex_row flex_aic flex_jcc mt_30 mb_60 mb_0_sm">
+            <div class="width_frame_780_W flex_row flex_jcsb flex_wrap flex_column_md flex_aic_md">
+                <div class="width_frame_460_W flex_column">
+                    <div class="bg_main py_30 px_40 px_30_sm">
+                        <div class="flex_row flex_jcsb flex_aife flex_wrap mb_30 ">
+                            <p class="mainlight_color fs_36 fw700_lh150">付款</p>
+                            <div class="width_frame_190_W flex_row flex_jcsb flex_wrap pseudo_line ">
+                                <div class="bg_main zindex4"><span class="material-icons fs_20 mainlight_color ">check_circle </span></div>
+                                <div class="bg_main zindex4"><span class="material-icons fs_20 mainlight_color ">check_circle</span></div>
+                                <div class="bg_main zindex4"><span class="material-icons fs_20 mainlight_color ">radio_button_checked</span></div>
+                            </div>
+                        </div>
+                        <div class="width_frame_380_W mb_30 flex_row">
+                            <a class="text_nonedeco wid_50per" href="electronic.html">
+                                <div class=" fs_20 fw700_lh150 mainlight_color bg_main py_14 border_all_lightgreen text_center">電子發票</div>
+                            </a>
+                            <a class="text_nonedeco wid_50per" href="post.html">
+                                <div class=" fs_20 fw700_lh150 main_color bg_light_main py_14 border_all_lightgreen  text_center">郵寄發票</div>
+                            </a>
+                        </div>
+
+                        <div class="width_frame_380_W flex_column mb_16">
+                            <div class="flex_row flex_jcsb flex_aife flex_wrap mb_8">
+                                <p class="fs_20 mainlight_color">地址</p>
+                                <div class="flex_row">
+                                    <input class="bg_light_main fs_16 mr_8" type="checkbox">
+                                    <p class="mainlight_color fs_16">同運送地址</p>
+                                </div>
+                            </div>
+                            <div class="flex_row flex_jcsb flex_aife width_frame_380_W mb_8 gap_x8_y0">
+                                <div class="flex_column width_frame_186_W">
+                                    <div class="pl_20 py_16 bg_light_main">
+                                        <select class="wid_100per border-none bg_light_main green_color" name="address_city" id="city" aria-placeholder="高雄市">
+                                            <option value="Taipei">台北市</option>
+                                            <option value="Kao" selected>高雄市</option>
+                                            <option value="Taichiung">台中市</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="pl_20 py_16 bg_light_main width_frame_186_W">
+                                    <select class="wid_100per border-none bg_light_main green_color" name="address_district" id="district" aria-placeholder="新興區">
+                                        <option value="LY">苓雅區</option>
+                                        <option value="SS" selected>新興區</option>
+                                        <option value="KS">鼓山區</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="pl_20 py_16 bg_light_main">
+                                <input class="ph_color wid_100per border-none bg_light_main green_color" type="text" placeholder="幸福路 520 號">
+                            </div>
+                        </div>
+
+
+                        <div class="width_frame_380_W  flex_column">
+                            <p class="fs_20 mainlight_color mb_8">統一編號（選填）</p>
+                            <div class="pl_20 py_16 bg_light_main">
+                                <input class="ph_color wid_100per border-none bg_light_main green_color" type="text" placeholder="12345678">
+                            </div>
+                        </div>
+                    </div>
+                    <a class="text_nonedeco" href="paysuccess.html">
+                        <div class="py_18 bg_yellow main_color fs_24 fw700_lh150 text_center">確認結帳</div>
+                    </a>
+                </div>
+                <div class="width_frame_300_W flex_column display_none_sm">
+                    <div class="flex_column mb_20">
+                        <div class="py_16 bg_light_main fs_24 fw700_lh150 green_color text_center">訂單摘要</div>
+                        <div class="flex_column px_20 py_16 border_all_lightgreen">
+                            <div class="flex_row flex_jcsb green_color mb_8 fs_16">
+                                <p>小計</p>
+                                <p>NT$ 2,700</p>
+                            </div>
+                            <div class="flex_row flex_jcsb green_color mb_16 fs_16">
+                                <p>運費</p>
+                                <p>NT$ 300</p>
+                            </div>
+                            <div class="flex_row flex_jcsb green_color fs_20 fw700_lh150" >
+                                <p>總計</p>
+                                <p>NT$ 3,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex_column">
+                        <div class="py_16 bg_light_main fs_24 fw700_lh150 green_color text_center">購物清單</div>
+                        <div class="flex_column py_16 px_20 border_all_lightgreen">
+                            <div class="flex_row flex_aic mb_16">
+                                <img class="cart_img_frame mr_20" src="pic/p-1.png" alt="">
+                                <div class="flex_column">
+                                    <p class="green_color fs_16">焦糖馬卡龍 (2)</p>
+                                    <p class="green_color fs_20 fw700_lh150">NT$ 900</p>
+                                </div>
+                            </div>
+                            <div class="flex_row flex_aic mb_16">
+                                <img class="cart_img_frame mr_20 " src="pic/p-3.png" alt="">
+                                <div class="flex_column">
+                                    <p class="green_color fs_16">焦糖馬卡龍 (2)</p>
+                                    <p class="green_color fs_20 fw700_lh150">NT$ 900</p>
+                                </div>
+                            </div>
+                            <div class="flex_row flex_aic">
+                                <img class="cart_img_frame mr_20 " src="pic/p-5.png" alt="">
+                                <div class="flex_column">
+                                    <p class="green_color fs_16">焦糖馬卡龍 (2)</p>
+                                    <p class="green_color fs_20 fw700_lh150">NT$ 900</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer start-->
+        <div class="flex_row flex_jcc flex_aic ">
+            <div class="width_frame_1024_W flex_column">
+                <div class="width_frame_1024_W bg_main flex_row flex_jcc flex_aic">
+                    <div class="width_frame_780_W flex_row flex_jcsb flex_aic flex_wrap bg_main py_30 flex_column_md flex_aic_md">
+                        <div class="flex_row flex_aic md_30_md">
+                            <img class="logo_frame mr_20" src="pic/logo-light.svg" alt="">
+                            <p class="fs_24 white_color">訂閱你我的甜蜜郵件</p>
+                        </div>
+                        <div class="flex_row flex_jcsb flex_aic searchbar_frame bg_light_main">
+                            <div class="flex_row flex_aic py_16 pl_20">
+                                <img src="pic/mail-24px.png" alt="">
+                                <input class="wid_100per_sm bg_light_main border_all_lightgreen" type="123">
+                            </div>
+                            <div class="py_16 forwardbtn_frame bg_yellow flex_row flex_jcc">
+                                <a class="" href="">
+                                    <img class="forwardbtnicon_frame" src="pic/arrow_forward-24px.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="width_frame_1024_W bg_light_main flex_row flex_jcc flex_aic">
+                    <div class="width_frame_780_W flex_column pl_30_sm">
+                        <div class="flex_row flex_jcsb py_30">
+                            <div class="flex_column flex_jcsb ">
+                                <a href="index.html"><img class="logotype_frame mb_40_sm" src="https://hexschool.github.io/webLayoutTraining1st/student-week1/logotype-sm-dark.svg" alt=""></a>
+                                <p class="main_color fs_16 fw500_lh150 word_break">07-1234-5678<br>sweetaste@email.com<br>800 高雄市新興區幸福路 520 號</p>
+                            </div>
+                            <img class="width_frame_60_W display_none_sm" src="https://hexschool.github.io/webLayoutTraining1st/student-week1/sm-footer_slogan.svg" alt="">
+                        </div>
+                        <div class="flex_row flex_jcsb flex_aife pb_30 flex_wrap flex_column_sm flex_aifs_sm">
+                            <div class="flex_row flex_jcfs mb_24_sm">
+                                <img class="icon_frame mr_8" src="https://hexschool.github.io/webLayoutTraining1st/student-week1/ic-line@.svg" alt="">
+                                <img class="icon_frame" src="https://hexschool.github.io/webLayoutTraining1st/student-week1/ic-facebook.svg" alt="">
+                            </div>
+                            <p class="main_color fs_16">© 2018 Sweetaste* All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer end-->
+
+    </div>
+</body>
+</html>
